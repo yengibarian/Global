@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global</title>
+    <!-- Font Poppins -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+       <div class="container">
+        <div class="header">
+            <div class="logo">
+                <div class="logo_content">
+                    <div class="logo_item">
+                        G
+                    </div>
+                    <div class="logo_text">
+                        <p>Global</p>
+                    </div>
+                </div>
+                <div class="menu_btn">
+                    <div class="burger">
+
+                    </div>
+                </div>
+            </div>
+    
+            <div class="nav">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="##">Mobile Top Up</a>
+                        </li>
+                        <li>
+                            <a href="##">About</a>
+                        </li>
+                        <li>
+                            <a href="##">Rate</a>
+                        </li>
+                        <li>
+                            <a href="##"> Help</a>
+                        </li>
+                    </ul>
+                </nav>
+                <button class="signUp">
+                    sign up
+                </button>
+            </div>
+    
+
+        </div>
+       </div>
+    </header>
+
+    <section id="buy">
+        <div class="container">
+            <div id="content">
+                <div class="buy_content">
+
+                    <div class="buy_content_title" >
+                        <h1>
+                            <p>Now Buy Your</p>
+                            <p>PIN or <span>Top Up</span> </p>
+                            <p>With Bank Transfer</p>
+                        </h1>
+                    </div>
+        
+                    <div class="buy_content_text">
+                        <p>
+                            We Make international calling simple, relible, and cheap basedon your unique calling behavior.
+                        </p>
+                    </div>
+        
+                    <div class="buy_content_btn">
+                        <button>get started</button>
+                    </div>
+        
+                    <div class="buy_content_search">
+                        <form action="">
+                            <input id='search' type="text" placeholder='Where do you want to call?'>
+                            <label for="search">
+                                <button type='submit'>
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </label>
+                        </form>
+                    </div>
+        
+                    <div class="buy_content_subscribe">
+                        <div class='buy_content_subscribe_img'>
+                            <a href="#"><img src="img/1.png" alt=""></a>
+                            <a href="#"><img src="img/2.png" alt=""></a>
+                            <a href="#"><img src="img/3.png" alt=""></a>
+                            <a href="#">+</a>
+                        </div>
+                        <div class='buy_content_subscribe_text'>
+                            <p>45k+ Regular User. <a href='#'>View Price Plan</a></p>
+                        </div>
+                    </div>
+        
+        
+        
+                </div>
+                 <div class="buy_img">
+                    <div class="buy_img_icon" id='rotate'>
+                        <span class="icon1" id='icon1'></span>
+                        <span class="icon2" id='icon2'></span>
+                        <span class="icon3" id='icon3'></span>
+                        <span class="icon4" id='icon4'></span>
+                        <span class="icon5" id='icon5'></span>
+                    </div>
+                    <div class="buy_img_icon_round">
+                            
+                    </div>
+                     <img src="/img/girl.png" alt="">
+                </div>
+            </div> 
+        </div>
+    </section>
+
+    <!-- jQuery -->
+    <script
+    src="https://code.jquery.com/jquery-3.6.0.js"
+    integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+    <script>
+        var looper;
+        var degrees = 0;
+        function rotateAnimation(el,speed){
+            var elem = document.getElementById(el);
+            elem.style.WebkitTransform = "rotate("+degrees+"deg)";
+            looper = setTimeout('rotateAnimation(\''+el+'\','+speed+')',speed);
+            degrees++;
+            if(degrees > 359){
+                degrees = 1;
+            }
+        }
+
+        var looper1;
+        var degrees1 = 0;
+        function rotateAnimation1(el1,speed1){
+            var elem1 = document.getElementById(el1);
+            elem1.style.WebkitTransform = "rotate("+degrees1+"deg) scale(2,2)";
+            looper1 = setTimeout('rotateAnimation1(\''+el1+'\','+speed1+')',speed1);
+            degrees1--;
+            if(degrees1 < -359){
+                degrees1 = 1;
+            }
+        }
+
+        var looper2;
+        var degrees2 = 0;
+        function rotateAnimation2(el2,speed2){
+            var elem2 = document.getElementById(el2);
+            elem2.style.WebkitTransform = "rotate("+degrees2+"deg) scale(2,2)";
+            looper2 = setTimeout('rotateAnimation2(\''+el2+'\','+speed2+')',speed2);
+            degrees2--;
+            if(degrees2 < -359){
+                degrees2 = -1;
+            }
+        }
+
+        var looper3;
+        var degrees3 = 0;
+        function rotateAnimation3(el3,speed3){
+            var elem3 = document.getElementById(el3);
+            elem3.style.WebkitTransform = "rotate("+degrees3+"deg) scale(2,2)";
+            looper3 = setTimeout('rotateAnimation3(\''+el3+'\','+speed3+')',speed3);
+            degrees3--;
+            if(degrees3 < -359){
+                degrees3 = -1;
+            }
+        }
+
+        var looper4;
+        var degrees4 = 0;
+        function rotateAnimation4(el4,speed4){
+            var elem4 = document.getElementById(el4);
+            elem4.style.WebkitTransform = "rotate("+degrees4+"deg) scale(2,2)";
+            looper4 = setTimeout('rotateAnimation4(\''+el4+'\','+speed4+')',speed4);
+            degrees4--;
+            if(degrees4 < -359){
+                degrees4 = -1;
+            }
+        }
+
+        var looper5;
+        var degrees5 = 0;
+        function rotateAnimation5(el5,speed5){
+            var elem5 = document.getElementById(el5);
+            elem5.style.WebkitTransform = "rotate("+degrees5+"deg) scale(2,2)";
+            looper5 = setTimeout('rotateAnimation5(\''+el5+'\','+speed5+')',speed5);
+            degrees5--;
+            if(degrees5 < -359){
+                degrees5 = -1;
+            }
+        }
+
+    </script>
+    <script>rotateAnimation("rotate",25);</script>
+    <script>rotateAnimation1("icon1",25);</script>
+    <script>rotateAnimation2("icon2",25);</script>
+    <script>rotateAnimation3("icon3",25);</script>
+    <script>rotateAnimation4("icon4",25);</script>
+    <script>rotateAnimation5("icon5",25);</script>
+
+</body>
+</html>
+
+    
